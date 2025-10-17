@@ -65,6 +65,6 @@ class RsocialsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def rsocial_params
-      params.require(:rsocial).permit(:title, :color)
+      params.require(:rsocial).permit(:title, :color, :image)
     end
 end
