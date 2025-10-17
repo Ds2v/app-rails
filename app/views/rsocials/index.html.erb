@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Rsocials for Ds2v</h1>
+
+<div id="rsocials">
+  <% @rsocials.each do |rsocial| %>
+    <%= render rsocial %>
+    <p>
+      <%= link_to "Show this rsocial", rsocial %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New rsocial", new_rsocial_path %>

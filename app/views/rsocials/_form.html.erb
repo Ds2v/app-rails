@@ -1,0 +1,27 @@
+<%= form_with(model: rsocial) do |form| %>
+  <% if rsocial.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(rsocial.errors.count, "error") %> prohibited this rsocial from being saved:</h2>
+
+      <ul>
+        <% rsocial.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title, class:"form-control" %>
+  </div>
+
+  <div>
+    <%= form.label :color, style: "display: block" %>
+    <%= form.color_field :color %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

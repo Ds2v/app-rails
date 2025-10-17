@@ -1,0 +1,2 @@
+module RsocialsHelper
+end

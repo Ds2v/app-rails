@@ -1,0 +1,2 @@
+class Rsocial < ApplicationRecord
+end
