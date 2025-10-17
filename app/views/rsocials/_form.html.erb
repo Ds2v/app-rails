@@ -13,7 +13,7 @@
 
   <div>
     <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title, class:"form-control" %>
+    <%= form.text_field :title, class:"form-control w-50" %>
   </div>
 
   <div>
@@ -22,6 +22,6 @@
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit "Guardar", class:"btn btn-primary d-block" %>
   </div>
 <% end %>
